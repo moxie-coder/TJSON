@@ -1,6 +1,6 @@
 Use in your code
 
-### This is the old Usage page for people who don't understand FNF, you might wanna [check this out](InsertURLHere) otherwise
+### This is the old Usage page for people who don't understand FNF, you might wanna [check this out](../README.md#-usage) otherwise
 
 ----------------
 
