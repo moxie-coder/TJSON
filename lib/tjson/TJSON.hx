@@ -492,7 +492,7 @@ class TJSONEncoder{
 
 	private function encodeValue( value:Dynamic, style:EncodeStyle, depth:Int):String {
 		if(value is Int || value is Float){
-				return(value);
+				return Std.string(value);
 		}
 		else if(value is Array || value is List){
 			var v: Array<Dynamic> = value;
@@ -511,7 +511,7 @@ class TJSONEncoder{
 			return('"'+Std.string(value).replace("\\","\\\\").replace("\n","\\n").replace("\r","\\r").replace('"','\\"')+'"');
 		}
 		else if(value is Bool){
-			return(value);
+			return Std.string(value);
 		}
 		else if(Reflect.isObject(value)){
 			var ret = cacheEncode(value);
